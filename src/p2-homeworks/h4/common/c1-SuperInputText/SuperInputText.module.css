@@ -1,0 +1,63 @@
+
+
+.error {
+    color: rgba(255, 0, 0, 0.7);
+}
+
+.inputDefault {
+    background: rgba(124, 124, 124, 0.2);
+}
+
+/*INPUT--------------------------------------------------------------------*/
+.inputC{
+    margin: 10px;
+}
+
+.inputC input:focus {
+    outline: none;
+}
+
+.inputC input{
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    width: 300px;
+    border: none;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 320px;
+}
+.bar:before, .bar:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: #5db200;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+.bar:before {
+    left: 50%;
+}
+.bar:after {
+    right: 50%;
+}
+
+.inputC input:focus ~ .bar:before,
+.inputC input:focus ~ .bar:after {
+    width: 50%;
+}
+/*INPUT--ERROR------------------------------------------------------------------*/
+
+.barError:before, .barError:after {
+    background: rgb(255, 0, 0);
+}
+
+.barError {
+    background: rgba(124, 124, 124, 0.2);
+}

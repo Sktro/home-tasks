@@ -1,0 +1,35 @@
+.blue {
+    background: rgba(24, 170, 234, 0.21);
+}
+
+
+.testSpanError {
+    color: blue;
+}
+
+.inputContein {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonContain{
+    display: flex;
+    flex-direction: column;
+}
+
+.checkboxContain {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+/*------------------------------------INPUT------------------------------------------------------*/
+
+

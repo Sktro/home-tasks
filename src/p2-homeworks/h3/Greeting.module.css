@@ -1,0 +1,110 @@
+.contain {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.error_text {
+    font-size: 13px;
+    color: red;
+}
+
+.form input {
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    width: 300px;
+    border: none;
+}
+
+.form {
+    margin-bottom: 10px;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+.form label {
+    color: #5264AE;
+    font-size: 14px;
+    left: 10px;
+    top: 15px;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 320px;
+}
+.bar:before, .bar:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: #5db200;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+.bar:before {
+    left: 50%;
+}
+.bar:after {
+    right: 50%;
+}
+
+.form input:focus ~ .bar:before,
+.form input:focus ~ .bar:after {
+    width: 50%;
+}
+
+/*ERROR ===============================================================================================*/
+
+.bar_error {
+    position: relative;
+    display: block;
+    width: 320px;
+}
+.bar_error:before, .bar_error:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: #d30000;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+.bar_error:before {
+    left: 50%;
+}
+.bar_error:after {
+    right: 50%;
+}
+
+.form input:focus ~ .bar_error:before,
+.form input:focus ~ .bar_error:after {
+    width: 50%;
+}
+
+.buttonC button {
+    background-color: #e7e7e7; color: black;
+    font: inherit;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 6px 18px;
+    transition-duration: 0.5s;
+    border: 2px solid #555555;
+}
+
+.buttonC button:hover {
+    background-color: #555555;
+    color: #e7e7e7;
+    font: inherit;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 6px 18px;
+    transition-duration: 0.5s;
+    border: 2px solid #e7e7e7;
+}

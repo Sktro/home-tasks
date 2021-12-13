@@ -1,0 +1,70 @@
+.messages {
+    display: flex;
+    padding: 30px 0 0 30px;
+}
+
+.avatar {
+    align-self: end;
+    margin-bottom: 5px;
+}
+
+.avatar img {
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    border: 1px solid #656565;
+}
+
+.dialog {
+    position: relative;
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    margin: 0 0 10px 15px;
+    width: 230px;
+    background-color: rgb(248, 203, 6);
+    z-index: 3;
+}
+
+.dialog:before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: -7px;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(248, 203, 6);
+    border-bottom-right-radius: 15px;
+}
+.dialog:after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: -10px;
+    width: 10px;
+    height: 20px;
+    background: white;
+    border-bottom-right-radius: 10px;
+}
+
+.name {
+    color: #070000;
+    align-self: start;
+    font-weight: bold;
+}
+
+.time {
+    align-self: end;
+    color: #3f3f3f;
+    font-size: 13px;
+}
+
+.text {
+    flex-wrap: wrap;
+    padding-top: 5px;
+    font-family: Candara;
+}
