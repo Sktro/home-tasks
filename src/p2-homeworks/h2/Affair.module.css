@@ -3,26 +3,34 @@
 .button {
     user-select: none;
     font-weight: bold;
-    color: red;
+    color: white;
     font-size: 20px;
-    margin-bottom: 4px;
-    transition-duration: 0.5s;
+    height: 30px;
+    width: 40px;
+    margin: 1px;
+    text-align: center;
+    background-color: indianred;
 }
-.contain {
+.containTasks {
+    background-color: #656565;
+    margin: 1px;
+    color: white;
     display: flex;
     align-items: center;
-}
+    height: 30px;
+    width: 300px;
+    justify-content: space-around;
 
-.text2 {
-    padding: 20px;
 }
 
 .text1 {
     font-weight: bold;
-    margin-left: 30px;
 }
 
 .button:hover {
-    transform: scale(1.5);
-    transition-duration: 0.5s;
+background-color: darkred;
+}
+
+.contain {
+    display: flex;
 }

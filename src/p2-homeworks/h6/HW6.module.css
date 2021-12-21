@@ -1,0 +1,13 @@
+.buttons {
+    display: flex;
+    padding-left:10px;
+}
+
+.contain {
+    padding-top: 15px;
+    width: 300px;
+}
+
+.superInput {
+
+}

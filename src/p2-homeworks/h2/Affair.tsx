@@ -13,12 +13,13 @@ function Affair(props: AffairPropsType) {
 
     return (
         <div className={classes.contain}>
+        <div className={classes.containTasks}>
             <div className={classes.text1}>{props.affair.name}</div>
             <div className={classes.text2}>{props.affair.priority}</div>
-            <div className={classes.button}>
-                <span  onClick={deleteCallback}>х</span>
-            </div>
         </div>
+        <div className={classes.button}><span  onClick={deleteCallback}>х</span></div>
+    </div>
+
     )
 }
 

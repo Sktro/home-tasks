@@ -1,0 +1,11 @@
+.superEditableSpan{
+    margin: 5px;
+    background: url("https://cdn-icons.flaticon.com/png/512/3298/premium/3298830.png?token=exp=1640086631~hmac=8af8a6ec527d47c6a27b8d8f211ab32b") 0 0 no-repeat;
+    background-size: 18px 18px;
+    padding-left: 23px;
+    user-select: none;
+}
+
+.superEditableSpan:hover {
+    color: royalblue;
+}
