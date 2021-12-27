@@ -1,0 +1,20 @@
+.hw7contain {
+    margin-left: 100px;
+    width: 300px;
+    height: 100px;
+    margin-bottom: 80px;
+}
+
+.letter {
+    border: solid #000000 1px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    width: 80px;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: 100px;
+    padding-bottom: 10px;
+    border-radius: 50%;
+
+}

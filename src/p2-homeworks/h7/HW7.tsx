@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import SuperSelect from './common/c5-SuperSelect/SuperSelect'
 import SuperRadio from './common/c6-SuperRadio/SuperRadio'
+import style from './hw7.module.css'
 
 const arr = ['x', 'y', 'z']
 
@@ -9,8 +10,11 @@ function HW7() {
 
     return (
         <div>
-            <hr/>
+        <hr/>
             homeworks 7
+        <div className={style.hw7contain}>
+
+
 
             {/*should work (должно работать)*/}
             <div>
@@ -29,11 +33,14 @@ function HW7() {
                 />
             </div>
 
+
+
+        </div>
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeSuperSelect/>*/}
             {/*<AlternativeSuperRadio/>*/}
-            <hr/>
+    <hr/>
         </div>
     )
 }
