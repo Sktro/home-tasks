@@ -1,0 +1,23 @@
+.people {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    background-color: #d25e0c;
+    margin: 1px;
+    padding: 0 5px;
+}
+
+.name {
+    color: white;
+    font-weight: bold;
+
+}
+
+.age {
+    color: white;
+    font-weight: bold;
+}
+
+.buttonContain {
+    display: flex;
+}
