@@ -1,30 +1,47 @@
 import React, {useState} from 'react'
 import SuperRange from './common/c7-SuperRange/SuperRange'
 import SuperDoubleRange from './common/c8-SuperDoubleRange/SuperDoubleRange'
+import style from './hw11.module.css'
 
-function HW11() {
-    const [value1, setValue1] = useState(0)
-    const [value2, setValue2] = useState(100)
+type HW11PropsType = {
+    min: number
+    max: number
+}
+
+
+function HW11(props: HW11PropsType) {
+    const [startValue, setStartValue] = useState(props.min)
+    const [maxValue, setMaxValue] = useState(props.max)
 
     return (
-        <div>
+        <div className={style.contain}>
             <hr/>
             homeworks 11
 
             {/*should work (должно работать)*/}
-            <div>
-                <span>{value1}</span>
+            <div className={style.SuperRange}>
                 <SuperRange
-                    // сделать так чтоб value1 изменялось
+                    setStartValue={setStartValue}
+                    startValue={startValue}
+                    max={props.max}
+                    min={props.min}
+                    maxValue={maxValue}
                 />
             </div>
 
-            <div>
-                <span>{value1}</span>
+            <div className={style.SuperDoubleRange}>
                 <SuperDoubleRange
+                    min={props.min}
+                    max={props.max}
+                    maxValue={maxValue}
+                    startValue={startValue}
+                    setStartValue={setStartValue}
+                    setMaxValue={setMaxValue}
+                    onChange={({ min, max }: { min: number; max: number }) =>
+                        console.log(`min = ${min}, max = ${max}`)
+                    }
                     // сделать так чтоб value1 и value2 изменялось
                 />
-                <span>{value2}</span>
             </div>
 
             <hr/>
