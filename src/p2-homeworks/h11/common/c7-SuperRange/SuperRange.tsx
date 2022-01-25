@@ -33,9 +33,10 @@ const SuperRange: React.FC<SuperRangePropsType> = (
             const maxPercent = getPercent(+minValRef.current.value);
 
             if (range.current) {
-                range.current.style.right = `${minPercent}%`;
+                range.current.style.left = `${minPercent-maxPercent}%`;
                 range.current.style.width = `${minPercent+1}%`;
-                console.log(maxPercent)
+                console.log('maxPercent' +  maxPercent)
+                console.log('minPercent' +  minPercent)
             }
         }
     }, [startValue, getPercent]);
